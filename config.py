@@ -72,11 +72,18 @@ def parse_args():
 
     # ─── TTS ───────────────────────────────────────────────────────────
     parser.add_argument('--tts', type=str, default='edgetts',
-                        help="tts plugin: edgetts/gpt-sovits/cosyvoice/fishtts/tencent/doubao/indextts2/azuretts/qwentts")
+                        help="tts plugin: edgetts/gpt-sovits/xtts/tencent/doubao/azuretts/qwentts/omnitts/mimotts")
     parser.add_argument('--REF_FILE', type=str, default="zh-CN-YunxiaNeural",
-                        help="参考文件名或语音模型ID")
+                        help="参考文件名或语音模型ID（mimotts/omnitts/qwentts 下为音色名）")
     parser.add_argument('--REF_TEXT', type=str, default=None)
     parser.add_argument('--TTS_SERVER', type=str, default='http://127.0.0.1:9880')
+    # ─── MiMo-V2.5-TTS（小米 MiMo 开放平台） ─────────────────────
+    parser.add_argument('--MIMO_STYLE', type=str, default='',
+                        help="mimotts 默认风格指令（user 消息），空=内置默认；per-message 可用 datainfo.tts.instructions 覆盖")
+    parser.add_argument('--MIMO_BASE_URL', type=str, default='',
+                        help="mimotts API 端点，空=https://api.xiaomimimo.com/v1")
+    parser.add_argument('--MIMO_MODEL', type=str, default='',
+                        help="mimotts 模型名，空=mimo-v2.5-tts")
 
     # ─── LLM ──────────────────────────────────────────────────────────
     parser.add_argument('--llm_provider', type=str, default='dashscope',
