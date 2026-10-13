@@ -190,16 +190,7 @@ python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar1
 
 ---
 
-## 5. Docker 运行
-
-镜像说明:
-- **AutoDL**: [镜像](https://www.codewithgpu.com/i/lipku/livetalking/base)  
-- **UCloud**: [镜像](https://www.compshare.cn/images/4458094e-a43d-45fe-9b57-de79253befe4?referral_code=3XW3852OBmnD089hMMrtuU&ytag=GPU_GitHub_livetalking) — 支持开放任意端口 
-
-
----
-
-## 6. 性能指标
+## 5. 性能指标
 
 - 每路视频压缩消耗 CPU，分辨率越高 CPU 消耗越大；每路口型推理消耗 GPU
 - 不说话时并发数取决于 CPU，同时说话并发数取决于 GPU
@@ -220,7 +211,7 @@ python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar1
 
 ---
 
-## 7. 商用版
+## 6. 商用版
 |维度|开源版 |商用版 |
 |---|---|---|
 |定位|开源社区版，Apache 2\.0 |商用付费版，面向需要高性能、可运营交付的客户|
@@ -231,7 +222,7 @@ python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar1
 
 ---
 
-## 8. 声明
+## 7. 声明
 
 基于本项目开发并发布在B站、视频号、抖音等平台上的视频需带上 LiveTalking 水印和标识。
 

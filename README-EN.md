@@ -182,16 +182,7 @@ python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar1
 
 ---
 
-## 5. Docker
-
-Available images:
-- **AutoDL**: [Image](https://www.codewithgpu.com/i/lipku/livetalking/base)  
-- **UCloud**: [Image](https://www.compshare.cn/images/4458094e-a43d-45fe-9b57-de79253befe4?referral_code=3XW3852OBmnD089hMMrtuU&ytag=GPU_GitHub_livetalking) — Supports opening any port  
-
-
----
-
-## 6. Performance
+## 5. Performance
 
 - Each video stream compression consumes CPU; higher resolution means greater CPU usage. Each lip-sync inference consumes GPU
 - Concurrent sessions when not speaking depend on CPU; concurrent speaking sessions depend on GPU
@@ -212,7 +203,7 @@ Available images:
 
 ---
 
-## 7. Commercial
+## 6. Commercial
 |dimension|Open Source Version|Commercial Version|
 |---|---|---|
 |Positioning|Open Source Community Edition, Apache 2\.0|Commercial paid version, targeted at customers requiring high performance and operable delivery|
@@ -222,7 +213,7 @@ Available images:
 More detail <https://doc.livetalking.ai/en/docs/service/>  
 
 ---
-## 8. Statement
+## 7. Statement
 
 Videos developed based on this project and published on platforms such as Bilibili, WeChat Channels, and Douyin must include the LiveTalking watermark and logo.
 
