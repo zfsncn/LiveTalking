@@ -19,3 +19,8 @@ workspace/log_ngp.txt
 models/
 *.log
 dist
+
+# local-only (added 2026-10-13)
+.env
+logs/
+avatars/wav2lip/face_detection/detection/sfd/s3fd.pth
